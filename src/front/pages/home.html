@@ -9,24 +9,61 @@
 </head>
 
 <body>
+  <div id="main-container">
 
-  <div id="topo">
-    <div id="logo">
-      <a href="../index.html">
-        <img id="logo_uespi" src="../assets/media/images/logo_uespi.png" alt="Logo">
-      </a>
+    <div id="topo">
+      <div id="logo">
+        <a href="home.html">
+          <img id="logo_uespi" src="../assets/media/images/logo_uespi.png" alt="Logo">
+        </a>
+      </div>
+      <div id="menu">
+        <a class="botao" href="home.html">LIVROS</a>
+        <a class="botao" href="login.html">LOGIN</a>
+      </div>
     </div>
-    <div id="menu">
-      <button class="botao" href="../index.html">Home</a></li>
-        <button class="botao" href="../login.html">Login</a></li>
+
+    <div id="pesquisa">
+      <div id="barra-busca">
+        <input id="barra-pesquisa" type="text" placeholder="Pesquisar">
+      </div>
     </div>
-  </div>
 
-  <div id="row">
+    <div id="livros-container">
 
-  </div>
+      <div id="categoria-titulo">
+        <h2 id="titulo-categoria">Categoria</h2>
+        <div class="linha_horizontal"></div>
+      </div>
 
-  <div id="rodape"></div>
+      <div id="conteudo-livros">
+        <div id="categorias-livros">
+          <ul class="categorias">
+            <li>Educação</li>
+            <li>Política</li>
+            <li>Culinária</li>
+            <li>Português</li>
+            <li>Biologia</li>
+          </ul>
+          <div class="linha_vertical"></div>
+        </div>
+
+        <div id="cards-livros">
+          <div class="card-livro">
+
+            <img class="foto" src="../assets/media/images/pern.jpg" alt="Foto do Livro">
+            <div class="info-livros">
+              <h3>TITULO</h3>
+              <p>AUTOR</p>
+              <p>★★★★☆</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div id="rodape"></div>
 
 </body>
 
