@@ -8,32 +8,54 @@
   <title>Cadastro</title> <!--Carlos-->
 </head>
 
-<body>
-  </div>
-  <div class="content">
-    <h1>Cadastro de Usuário</h1>
-    <form action="processa_cadastro.php" method="post">
-      <label for="email">Email Institucional:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="matricula">Número de Matrícula:</label>
-      <input type="text" id="matricula" name="matricula" required>
-  
-      <label for="data_nascimento">Data de Nascimento:</label>
-      <input type="date" id="data_nascimento" name="data_nascimento" required>
-  
-      <label for="curso">Curso:</label>
-      <select id="curso" name="curso" required>
-        <option value="engenharia">Engenharia</option>
-        <option value="ciencia_computacao">Ciência da Computação</option>
-        <option value="administracao">Administração</option>
-        <!-- Adicione outras opções de curso aqui -->
-      </select>
-  
-      <input type="submit" value="Cadastrar">
-    </form>
-  </div>
+    <div class="main-login">
+      <div class="right-login">
+        <div class="card-login">
+            <h1> BEM-VINDO À</h1>
+             <H1>UESPI LIBRARY</H1>
+          
+          <form action="processa_cadastro.php" method="post">
+            <div class="textfield">
+              <label for="email">Email Institucional:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="textfield">
+              <label for="matricula">Número de Matrícula:</label>
+              <input type="text" id="matricula" name="matricula" required>
+            </div>
 
+            <div class="textfield">
+              <label for="SENHA">Senha:</label>
+              <input type="senha" id="senha" name="senha" required>
+            </div>
+
+            <div class="textfield">
+              <label for="Confirmar senha">Confirme a senha:</label>
+              <input type="Confirmar senha" id="Confirme a senha" name="Confirme a senha" required>
+            </div>
+
+
+            <div class="textfield">
+              <label for="data_nascimento">Data de Nascimento:</label>
+              <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </div>
+            <div class="textfield">
+              <label for="curso">Curso:</label>
+              <select id="curso" name="curso" required>
+                <option value="engenharia">Engenharia</option>
+                <option value="ciencia_computacao">Ciência da Computação</option>
+                <option value="administracao">Administração</option>
+                <!-- Adicione outras opções de curso aqui -->
+              </select>
+            </div>
+            <button class="btn-login">Cadastrar</button>
+            <div class="textfield">
+              <p>Já tem cadastro?<a href="#" class="criarconta">Fazer login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
