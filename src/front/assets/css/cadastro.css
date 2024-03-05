@@ -9,83 +9,39 @@ body * {
     box-sizing: border-box;
 }
 
-.main-login {
-    width: 100vw;
-    height: 100vh;
+
+.main-cadastro {
+    width: 100%;
+    min-height: 100vh;
     background: linear-gradient(#446ee3ff, #8118ccff);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.textfield>a {
-    color: #c0ace3ff;
-    text-decoration: none;
-    margin-left: 10px;
-    align-items: flex-end;
-    font-size: small;
-}
-
-.textfield>p {
-    font-size: 12pt;
-    margin-left: 15px;
-    flex-grow: 1;
-    flex-direction: column;
-    
-}
-
-.criarconta {
-    color: #c0ace3ff;
-    text-decoration: none;
-    margin-left: 10px;
-    align-items: flex-end;
-}
-
-.right-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-login {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.card-cadastro {
+    width: 90%;
+    max-width: 600px;
     padding: 30px 35px;
     background: linear-gradient(#8a9dedff, #ab69e0ff);
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-login>h1 {
+.card-cadastro>h1 {
     color: white;
     font-weight: 800;
     margin: 0;
+    margin-left: 140px;
 }
 
 .textfield {
     width: 100%;
-    display: inline-block;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     margin: 10px 0px;
 }
 
-.textfield>input {
+.textfield>input,
+.textfield>select {
     width: 100%;
     border: 0.1px solid white;
     border-radius: 10px;
@@ -102,14 +58,15 @@ body * {
     margin-bottom: 10px;
 }
 
-.textfield>input::placeholder {
+.textfield>input::placeholder,
+.textfield>select::placeholder {
     color: #cdb8f2ff;
 }
 
-.btn-login {
+.btn-cadastro {
     width: 100%;
     padding: 16px 0px;
-    margin:1px;
+    margin: 1px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -122,6 +79,42 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+/* Estilos para o topo */
+header#topo {
+    background-color: #3b24ad;
+    color: #fff;
+    /* padding: 20px; */
+    display: flex;
+   
+    align-items: center;
+}
+
+header#topo #logo img {
+    max-width: 150px;
+}
+
+header#topo #menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Estilos para o rodapé */
+footer#rodape {
+    width: 100%;
+    height: 83px;
+    background-color: #7752FE;
+    border-top: solid #190482 3px;
+}
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 950px) {
     .card-login {
@@ -130,34 +123,7 @@ body * {
 }
 
 @media only screen and (max-width: 600px) {
-    .main-login {
-        flex-direction: column;
-    }
-
-    .left-login>h1 {
-        display: none;
-    }
-
-    .left-login {
-        width: 100%;
-        right: auto;
-    }
-
-    .right-login {
-        width: 100%;
-        right: auto;
-    }
-
-    .left-login-image {
-        width: 50vh;
-    }
-
     .card-login {
         width: 90%;
     }
-
-    .card-login>.right-login-image {
-        width: 50%;
-    }
-
 }
